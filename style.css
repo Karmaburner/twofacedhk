@@ -245,6 +245,34 @@ img { max-width: 100%; display: block; }
   font-size: 1.05rem;
 }
 
+/* ---------- Merch ---------- */
+.merch {
+  padding: 7rem 1.5rem;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid rgba(216,30,30,0.25);
+}
+
+.merch h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: 1.5rem;
+}
+
+.merch p {
+  color: var(--grey);
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.merch p a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+.merch p a:hover { text-decoration: underline; }
+
 /* ---------- Shows ---------- */
 .shows {
   padding: 6rem 1.5rem;
