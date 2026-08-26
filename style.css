@@ -175,6 +175,19 @@ img { max-width: 100%; display: block; }
 
 .btn-outline:hover { background: var(--red); color: var(--black); }
 
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+.btn-icon svg {
+  width: 1.1em;
+  height: 1.1em;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
 .scroll-cue {
   position: absolute;
   bottom: 2rem;
@@ -351,6 +364,9 @@ img { max-width: 100%; display: block; }
 }
 
 .socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
   color: var(--grey);
   text-decoration: none;
   font-size: 0.85rem;
@@ -360,6 +376,12 @@ img { max-width: 100%; display: block; }
 }
 
 .socials a:hover { color: var(--red); }
+
+.socials a svg {
+  width: 1.1em;
+  height: 1.1em;
+  fill: currentColor;
+}
 
 /* ---------- Footer ---------- */
 .footer {
