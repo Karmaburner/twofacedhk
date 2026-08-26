@@ -53,47 +53,13 @@ img { max-width: 100%; display: block; }
   text-align: center;
   padding: 1.5rem;
   overflow: hidden;
-}
-
-.hero-photos {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: clamp(4px, 1.2vw, 16px);
-  z-index: 0;
-}
-
-.hero-photo {
-  flex: 1 1 0;
-  min-width: 0;
-  overflow: hidden;
   background: var(--black);
 }
 
-.hero-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 20%;
-  filter: grayscale(1) contrast(1.2) brightness(0.32);
-}
-
-.hero-photo--bassist img { object-position: 38% 18%; }
-.hero-photo--drummer img { object-position: 68% 12%; }
-
-@media (max-width: 700px) {
-  .hero-photo img {
-    filter: grayscale(1) contrast(1.15) brightness(0.6);
-  }
-
-  .hero::before {
-    background:
-      radial-gradient(circle at 50% 35%, rgba(216,30,30,0.4) 0%, transparent 55%),
-      radial-gradient(circle at 50% 45%, transparent 0%, rgba(10,9,8,0.35) 65%, rgba(10,9,8,0.75) 100%),
-      linear-gradient(180deg, rgba(10,9,8,0.55) 0%, rgba(10,9,8,0.2) 30%, rgba(10,9,8,0.7) 100%);
-  }
+.hero-mask {
+  width: min(340px, 62vw);
+  margin: 0 auto 1rem;
+  filter: drop-shadow(0 0 50px rgba(216,30,30,0.35));
 }
 
 .hero::before {
@@ -101,10 +67,7 @@ img { max-width: 100%; display: block; }
   position: absolute;
   inset: 0;
   z-index: 1;
-  background:
-    radial-gradient(circle at 50% 35%, rgba(216,30,30,0.4) 0%, transparent 55%),
-    radial-gradient(circle at 50% 45%, transparent 0%, rgba(10,9,8,0.55) 65%, rgba(10,9,8,0.9) 100%),
-    linear-gradient(180deg, rgba(10,9,8,0.5) 0%, rgba(10,9,8,0.35) 30%, rgba(10,9,8,0.75) 100%);
+  background: radial-gradient(circle at 50% 40%, rgba(216,30,30,0.35) 0%, transparent 60%);
 }
 
 .hero::after {
