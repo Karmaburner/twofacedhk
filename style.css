@@ -140,13 +140,17 @@ img { max-width: 100%; display: block; }
 
 .hero-actions {
   margin-top: 2.5rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
 }
 
-.hero-actions .btn { margin-top: 0; }
+.hero-actions .btn {
+  margin-top: 0;
+  min-width: 220px;
+}
 
 .btn {
   display: inline-block;
@@ -201,7 +205,7 @@ img { max-width: 100%; display: block; }
 
 @keyframes bounce {
   0%, 100% { transform: translate(-50%, 0); }
-  50% { transform: translate(-50%, 10px); }
+  50% { transform: translate(-50%, 6px); }
 }
 
 /* ---------- Single ---------- */
