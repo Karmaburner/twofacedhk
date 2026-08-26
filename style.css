@@ -332,14 +332,16 @@ img { max-width: 100%; display: block; }
 }
 
 .contact-email {
-  display: inline-block;
-  color: var(--red);
-  font-size: clamp(1.1rem, 3vw, 1.5rem);
-  text-decoration: none;
-  letter-spacing: 0.03em;
+  margin-top: 0;
+  font-size: 1rem;
 }
 
-.contact-email:hover { text-decoration: underline; }
+.contact-email-plain {
+  margin-top: 1rem;
+  color: var(--grey);
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+}
 
 .socials {
   margin-top: 2rem;
