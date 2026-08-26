@@ -387,8 +387,9 @@ img { max-width: 100%; display: block; }
 .socials {
   margin-top: 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem 2rem;
 }
 
 .socials a {
